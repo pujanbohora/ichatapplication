@@ -1,7 +1,12 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:ichatapplication/configs/app_routes.dart';
 import 'package:ichatapplication/constants/assets_constants.dart';
 import 'package:ichatapplication/constants/custom_colors.dart';
+import 'package:ichatapplication/modules/authentication/screens/firebase_auth.dart';
+import 'package:ichatapplication/modules/authentication/screens/login_screen.dart';
+import 'package:ichatapplication/modules/chats/screens/chats_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -13,14 +18,15 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
-    _navigatetologinscreen();
+    _navigatetoFireBaseScreen();
   }
 
-  _navigatetologinscreen() async {
+  _navigatetoFireBaseScreen() async {
     await Future.delayed(const Duration(milliseconds: 4000), () {});
-    Navigator.pushNamed(context, LOGIN_SCREEN);
+    // Navigator.pushNamed(context, LOGIN_SCREEN);
+    Navigator.push(
+        context, MaterialPageRoute(builder: (context) => FirebaseAuthScreen()));
   }
 
   @override

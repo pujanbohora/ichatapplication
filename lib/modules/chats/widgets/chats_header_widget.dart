@@ -1,5 +1,6 @@
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
+import 'package:ichatapplication/configs/app_routes.dart';
 import 'package:ichatapplication/constants/custom_colors.dart';
 import 'package:ichatapplication/modules/profile/widget/bottomsheet_widget.dart';
 
@@ -44,6 +45,7 @@ class ChatsHeaderWidget extends StatelessWidget {
             children: [
               InkWell(
                 onTap: () {
+                  Navigator.pushNamed(context, CHAT_NOTIFICATION_SCREEN);
                 },
                 child: const Icon(
                   EvaIcons.bellOutline,

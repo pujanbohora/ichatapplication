@@ -8,7 +8,7 @@ class NotificationWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
         child: Container(
           padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           // height: MediaQuery.of(context).size.height,
@@ -27,21 +27,28 @@ class NotificationWidget extends StatelessWidget {
                       fit: BoxFit.cover,
                       image: AssetImage("assets/images/profile1.jfif"))),
             ),
-            SizedBox(
+            const SizedBox(
               width: 15,
             ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'Pujan Bohora',
-                  style: Theme.of(context)
-                      .textTheme
-                      .bodyText1!
-                      .copyWith(color: CustomColors.whiteShade),
-                ),
-                Text('hello pawan')
-              ],
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Pujan Bohora',
+                    style: Theme.of(context)
+                        .textTheme
+                        .bodyText1!
+                        .copyWith(color: CustomColors.whiteShade),
+                  ),
+                  Text(
+                    'Hello... how are you? sdfadsfsafsdfasfsdfsdfasdfsaf',
+                    style: Theme.of(context).textTheme.bodyText2,
+                    overflow: TextOverflow.ellipsis,
+                    maxLines: 1,
+                  ),
+                ],
+              ),
             )
           ]),
         ),

@@ -6,3 +6,4 @@ const String CHAT_ROOM_SCREEN = "/chats/chatroom";
 const String PROFILE_SCREEN = "/profile";
 const String GROUP_CHAT_SCREEN = "/groupchats";
 const String GROUP_CHAT_ROOM_SCREEN ="/groupschats/chats";
+const String CHAT_NOTIFICATION_SCREEN = "/privatechat/notification";

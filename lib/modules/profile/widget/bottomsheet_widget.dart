@@ -1,4 +1,5 @@
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:ichatapplication/configs/app_routes.dart';
 import 'package:ichatapplication/constants/assets_constants.dart';
@@ -72,6 +73,8 @@ class _BottomSheeteWidgetState extends State<BottomSheeteWidget> {
           ),
           InkWell(
             onTap: () {
+              
+              FirebaseAuth.instance.signOut();
               Navigator.pushNamed(context, LOGIN_SCREEN);
             },
             child: BottomSheetButtonWidget(
