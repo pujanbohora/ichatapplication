@@ -7,3 +7,5 @@ const String PROFILE_SCREEN = "/profile";
 const String GROUP_CHAT_SCREEN = "/groupchats";
 const String GROUP_CHAT_ROOM_SCREEN ="/groupschats/chats";
 const String CHAT_NOTIFICATION_SCREEN = "/privatechat/notification";
+const String MAIN_CHAT_SCREEN = "/privatechat/chat";
+const String SEARCH_SCREEN = "/search/user";

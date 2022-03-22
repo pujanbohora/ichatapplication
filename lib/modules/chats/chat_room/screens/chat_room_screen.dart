@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ichatapplication/modules/chat_room/widgets/chat_Room_bottom_text_box.dart';
-import 'package:ichatapplication/modules/chat_room/widgets/chat_Room_header_widget.dart';
-import 'package:ichatapplication/modules/chat_room/widgets/chat_message_box_widget.dart';
+import 'package:ichatapplication/modules/chats/chat_room/widgets/chat_Room_bottom_text_box.dart';
+import 'package:ichatapplication/modules/chats/chat_room/widgets/chat_Room_header_widget.dart';
+
+
+import '../widgets/chat_message_box_widget.dart';
 
 class ChatRoomScreen extends StatelessWidget {
   const ChatRoomScreen({Key? key}) : super(key: key);

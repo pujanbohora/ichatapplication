@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ichatapplication/modules/chat_room/widgets/chat_Room_bottom_text_box.dart';
-import 'package:ichatapplication/modules/chat_room/widgets/chat_Room_header_widget.dart';
-import 'package:ichatapplication/modules/chat_room/widgets/chat_message_box_widget.dart';
-import 'package:ichatapplication/modules/group_chat_room.dart/widgets/group_chat_room_bottom_test_widget.dart';
-import 'package:ichatapplication/modules/group_chat_room.dart/widgets/group_chat_room_message_widget.dart';
-import 'package:ichatapplication/modules/group_chat_room.dart/widgets/group_chat_room_header_widget.dart';
+import 'package:ichatapplication/modules/group_chat.dart/group_chat_room.dart/widgets/group_chat_room_bottom_test_widget.dart';
+import 'package:ichatapplication/modules/group_chat.dart/group_chat_room.dart/widgets/group_chat_room_header_widget.dart';
+import 'package:ichatapplication/modules/group_chat.dart/group_chat_room.dart/widgets/group_chat_room_message_widget.dart';
 
 class GroupChatRoomScreen extends StatelessWidget {
   const GroupChatRoomScreen({Key? key}) : super(key: key);

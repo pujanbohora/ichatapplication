@@ -15,7 +15,7 @@ class NotificationListingWidget extends StatelessWidget {
        physics: BouncingScrollPhysics(),
       itemCount: 20,
       itemBuilder: (context, index) {
-        return Container(child: const NotificationWidget());
+        return const NotificationWidget();
       }),
     );
   }

@@ -5,6 +5,7 @@ import 'package:ichatapplication/configs/app_routes.dart';
 import 'package:ichatapplication/constants/assets_constants.dart';
 import 'package:ichatapplication/constants/custom_colors.dart';
 import 'package:ichatapplication/modules/authentication/screens/login_screen.dart';
+import 'package:ichatapplication/modules/bottom_nav/bottom_nav_widget.dart';
 import 'package:ichatapplication/modules/chats/screens/chats_screen.dart';
 
 class FirebaseAuthScreen extends StatefulWidget {
@@ -35,7 +36,7 @@ class _FirebaseAuthScreenState extends State<FirebaseAuthScreen> {
             child: Text('Something went wrong'),
           );
         } else if (snapshot.hasData) {
-          return const ChatsScreen();
+          return const MainScreen();
         } else {
           return LoginScreen();
         }
